@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/asc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titlediv{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.titlediv p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+}
+.titlediv h1{
+    margin: auto;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 625px;
+    background-color: #2b2a48de;
+    border-radius: 15px;
+    padding: 50px;
+    gap: 20px;
+}
+label{
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#name,#email,#number,textarea{
+    width: 90%;
+    height: 35px;
+    border-radius: 6px;
+}
+#submit,#dropdown{
+    width: 91%;
+    height: 35px;
+    border-radius: 6px;
+}
+textarea{
+    height: 150px;
+    padding: 10px 0 0 10px;
+    margin:8px 0 0 0;
+}
+form div div label,input,#dropdown{
+    cursor: pointer;
+    padding: 0 0 0 10px;
+    margin:8px 0 0 0;
+}
+form div div input{
+    margin:10px 0 0 0;
+}
+#submit{
+    background-color: green;
+    color:white;
+}
+
+@media screen and (max-width: 625px) {
+    form{
+        width: 95vw;
+        padding:5vh 0 0 5vw ;
+        gap: 20px;
+    }
+    #submit,#dropdown{
+        width: 94%;
+    }
+    textarea{
+        height: 150px;
+        padding: 10px 0 0 10px;
+        margin:8px 0 0 0;
+    }
+    form div div label,input,#dropdown{
+        cursor: pointer;
+        padding: 0 0 0 10px;
+        margin:8px 0 0 0;
+    }    
+}
